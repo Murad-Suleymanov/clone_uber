@@ -199,7 +199,8 @@ class RegistrationScreen extends StatelessWidget {
       Map userMap = {
         "name": nameController.text,
         "email": emailController.text,
-        "phone": phoneController.text
+        "phone": phoneController.text,
+        "user_type": "client"
       };
 
       DbHelper.userDbReference.child(user.uid).set(userMap);
